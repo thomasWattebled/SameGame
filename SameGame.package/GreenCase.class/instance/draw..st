@@ -1,3 +1,3 @@
 drawing - general
 draw: drawer
-	drawer drawGreenCase
+	drawer drawGreenCasex:x y:y

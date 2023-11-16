@@ -1,3 +1,3 @@
 drawing - general
 draw: drawer
-	drawer drawNullCase
+	drawer drawNullCasex:x y:y

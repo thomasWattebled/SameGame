@@ -1,3 +1,3 @@
 as yet unclassified
 draw: drawer
-	drawer drawBlueCase
+	drawer drawBlueCasex:x y:y
