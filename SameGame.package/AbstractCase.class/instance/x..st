@@ -1,4 +1,4 @@
 accessing
 x: aCordonne
 
-	x := aCordonne 
+	position x: aCordonne 
