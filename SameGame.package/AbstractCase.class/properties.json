@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"x",
-		"y"
+		"position"
 	],
 	"name" : "AbstractCase",
 	"type" : "normal"
