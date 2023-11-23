@@ -1,11 +1,14 @@
 tests
-testClickAnd1CaseDisappear
+testClickAndCaseNothingAppend
 
 | board case caseAfterClick |
 
 board := SBoardElement new board: SameGameAbstacctTest new gridForTest.
 case := board children second.
 self assert: case case isYellowCase.
+"fonctionne jusque ici"
+
+"case seul donc pas de suppression"
 case click.
 caseAfterClick:= board children second.
-self assert: caseAfterClick case isGreenCase.
+self assert: case equals: caseAfterClick .

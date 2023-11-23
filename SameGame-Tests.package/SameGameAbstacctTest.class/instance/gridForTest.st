@@ -3,8 +3,8 @@ gridForTest
 	"Y: Yellow , B: Blue , G: Green , R: Red
 	represents this grid:
 	 | B | Y | R | Y | R |
-	 | R | G | R | G | R |
-	 | R | G | R | R | B |
+	 | G | G | R | G | R |
+	 | G | R | R | R | B |
 	 | R | R | R | B | B |
 	"
 	
@@ -15,13 +15,13 @@ gridForTest
 		at: 3 @ 1 put: (RedCase new);
 		at: 4 @ 1 put: (YellowCase new);		
 		at: 5 @ 1 put: (RedCase new);
-		at: 1 @ 2 put: (RedCase new);
+		at: 1 @ 2 put: (GreenCase new);
 		at: 2 @ 2 put: (GreenCase new);
 		at: 3 @ 2 put: (RedCase new);
 		at: 4 @ 2 put: (GreenCase new);
 		at: 5 @ 2 put: (RedCase new);
-		at: 1 @ 3 put: (RedCase new);
-		at: 2 @ 3 put: (GreenCase new);
+		at: 1 @ 3 put: (GreenCase new);
+		at: 2 @ 3 put: (RedCase new);
 		at: 3 @ 3 put: (RedCase new);
 		at: 4 @ 3 put: (RedCase new);
 		at: 5 @ 3 put: (BlueCase new);
