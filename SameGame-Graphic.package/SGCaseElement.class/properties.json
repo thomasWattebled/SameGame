@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "SameGame-Graphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"case",
+		"position"
+	],
+	"name" : "SGCaseElement",
+	"type" : "normal"
+}
