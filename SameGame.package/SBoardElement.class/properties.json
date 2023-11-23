@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "MygBoard",
-	"category" : "SameGame",
+	"super" : "BlElement",
+	"category" : "SameGame-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"board"
 	],
-	"name" : "Board",
+	"name" : "SBoardElement",
 	"type" : "normal"
 }

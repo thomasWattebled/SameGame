@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "MygAbstractBox",
-	"category" : "SameGame",
+	"super" : "TestCase",
+	"category" : "SameGame-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AbstractCase",
+	"name" : "SameGameBordElementTest",
 	"type" : "normal"
 }

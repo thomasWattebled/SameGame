@@ -1,0 +1,4 @@
+accessing
+isYellowCase 
+
+^ true
