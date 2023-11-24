@@ -3,7 +3,7 @@ testClickAndMultipleCaseDisappear
 
 | board case caseAfterClick |
 
-board := SBoardElement new board: SameGameAbstacctTest new gridForTest.
+board := SBoardElement new board: GameTest new gridForTest.
 case := board children at:6.
 self assert: case case isGreenCase.
 "fonctionne jusque ici"

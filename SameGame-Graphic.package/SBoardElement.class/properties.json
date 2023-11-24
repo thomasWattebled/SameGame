@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "BlElement",
-	"category" : "SameGame-UI",
+	"category" : "SameGame-Graphic",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"case",
 		"board"
 	],
-	"name" : "SCaseElement",
+	"name" : "SBoardElement",
 	"type" : "normal"
 }

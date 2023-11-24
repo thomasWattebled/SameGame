@@ -1,3 +1,3 @@
 drawing - general
 draw: drawer
-	drawer drawRedCasex:x y:y
+	drawer drawRedCasex: self x y: self y

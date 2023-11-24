@@ -1,3 +1,3 @@
 initialization
-drawCaseGreen	
+drawGreenCasex:x y:y
 		self background: Color lightGreen .

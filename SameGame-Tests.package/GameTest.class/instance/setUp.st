@@ -1,5 +1,7 @@
-helpers for setup
-gridForTest 
+running
+setUp
+	super setUp.
+
 	"Y: Yellow , B: Blue , G: Green , R: Red
 	represents this grid:
 	 | B | Y | R | Y | R |
@@ -8,8 +10,7 @@ gridForTest
 	 | R | R | R | B | B |
 	"
 	
-	
-	^ Board configureGrid: ((CTNewArray2D width: 5 height: 4)
+	board := Board configureGrid: ((CTNewArray2D width: 5 height: 4)
 		at: 1 @ 1 put: (BlueCase new);
 		at: 2 @ 1 put: (YellowCase new);
 		at: 3 @ 1 put: (RedCase new);
