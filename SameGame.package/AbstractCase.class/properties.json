@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"grid"
+		"board"
 	],
 	"name" : "AbstractCase",
 	"type" : "normal"

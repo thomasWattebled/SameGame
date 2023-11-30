@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SameGameBordElementTest",
+	"name" : "SameGameBoardElementTest",
 	"type" : "normal"
 }
