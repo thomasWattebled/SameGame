@@ -3,7 +3,7 @@ testClickAndCaseNothingAppend
 
 | board case caseAfterClick |
 
-board := SBoardElement new board: GameTest new gridForTest.
+board := SBoardElement new board: GameTest new gridForTest .
 case := board children second.
 self assert: case case isYellowCase.
 "fonctionne jusque ici"
