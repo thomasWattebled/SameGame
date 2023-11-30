@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"board"
+		"board",
+		"grid"
 	],
 	"name" : "GameTest",
 	"type" : "normal"

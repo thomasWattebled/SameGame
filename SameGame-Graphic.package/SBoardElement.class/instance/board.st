@@ -1,4 +1,4 @@
 accessing
 board 
 
-	^ Board
+	^ board
