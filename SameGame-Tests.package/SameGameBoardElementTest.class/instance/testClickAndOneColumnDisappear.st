@@ -34,7 +34,7 @@ resGrid := ((CTNewArray2D width: 5 height: 4)
 		at: 5 @ 4 put: (NullCase new);
 		yourself ).
 
-board := SBoardElement new board: GameTest new gridForTest.
+board := SBoardElement new board: GameTest new boardForTest.
 board board hitOnx: 3 y: 1.
 "fonctionne jusque ici"
 

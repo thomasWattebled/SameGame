@@ -33,8 +33,8 @@ resGrid := ((CTNewArray2D width: 5 height: 4)
 		at: 5 @ 4 put: (BlueCase new);
 		yourself ).
 
-board := SBoardElement new board: GameTest new gridForTest.
-board board hitOnx: 1 y: 2.
+board := GameTest new boardForTest.
+board hitCaseOnx: 1 y: 2.
 "fonctionne jusque ici"
 
-self assert: resGrid asArray equals: board board grid asArray.
+self assert: resGrid asArray equals: board grid asArray.

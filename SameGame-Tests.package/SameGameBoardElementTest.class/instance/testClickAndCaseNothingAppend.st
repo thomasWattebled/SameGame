@@ -3,7 +3,7 @@ testClickAndCaseNothingAppend
 
 	| board case caseAfterClick resGrid |
 
-	board := SBoardElement new board: GameTest new gridForTest .
+	board := SBoardElement new board: GameTest new boardForTest .
 	case := board children second.
 	resGrid := board board grid asArray.
 	"fonctionne jusque ici"
