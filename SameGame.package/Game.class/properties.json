@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"board"
+		"board",
+		"points"
 	],
 	"name" : "Game",
 	"type" : "normal"

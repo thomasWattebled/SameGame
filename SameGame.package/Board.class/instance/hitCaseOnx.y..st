@@ -4,8 +4,11 @@ hitCaseOnx: x y: y
 	hitList add: (self grid at:(x@y)).
 	(grid at:x@y) hit.
 	hitList size > 1 ifTrue: [self nullCaseOnx: x y:y].
+
+	self game addPoints: self calculePoint. 
 	
 	hitList removeAll.
+
 	
 	cpt := 1.
 	[ cpt <= self  grid width ] whileTrue: [
