@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"board"
+		"color"
 	],
-	"name" : "SBoardElement",
+	"name" : "SGGraphicCase",
 	"type" : "normal"
 }
