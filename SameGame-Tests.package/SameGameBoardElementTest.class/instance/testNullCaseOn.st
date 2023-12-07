@@ -1,11 +1,12 @@
 tests
 testNullCaseOn
 
-| firstBoard |
+| firstBoard game|
 
 "| B G |   =>       | N G |
  | G R |            | G R |       "
-firstBoard := Board new.
+game := Game new.
+firstBoard := Board new game:game.
 firstBoard := 	firstBoard configureGrid: ((CTNewArray2D width: 2 height: 2)
 		at: 1 @ 1 put: (BlueCase new board:firstBoard);
 		at: 1 @ 2 put: (GreenCase   new board:firstBoard);

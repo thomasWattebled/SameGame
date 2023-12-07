@@ -1,7 +1,7 @@
 tests
 testReorganiseBoard
 
-| firstBoard |
+| firstBoard game|
 
 "| B |            | B |
  | N |            | Y |
@@ -9,7 +9,8 @@ testReorganiseBoard
  | N |            | N |
  | B |            | N | "
 
-firstBoard := Board new.
+game := Game new.
+firstBoard := Board new game:game.
 firstBoard := 	firstBoard configureGrid: ((CTNewArray2D width: 1 height: 5)
 		at: 1 @ 1 put: (BlueCase new board:firstBoard);
 		at: 1 @ 2 put: (NullCase  new board:firstBoard);

@@ -1,8 +1,9 @@
 tests
 testExchangeColonne
-| board |
+| board game|
 
-board := Board new.
+game := Game new.
+board := Board new game:game.
 board configureGrid: ((CTNewArray2D width: 3 height: 3)
 		at: 1 @ 1 put: (NullCase  new);
 		at: 2 @ 1 put: (YellowCase new);

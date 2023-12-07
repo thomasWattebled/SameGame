@@ -1,11 +1,12 @@
 tests
 testClickOnBlueCase
 
-| board resGrid|
+| board resGrid game|
 
 "| B B  |			   | N N |
  | G R  |     =>  | G R |"
-board := Board new.
+game := Game new.
+board := Board new game:game.
 	board configureGrid: ((CTNewArray2D width: 2 height: 2)
 		at: 1 @ 1 put: (BlueCase new board:board);
 		at: 2 @ 1 put: (BlueCase  new board:board);

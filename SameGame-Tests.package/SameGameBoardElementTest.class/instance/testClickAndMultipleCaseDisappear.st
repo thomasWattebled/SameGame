@@ -1,7 +1,7 @@
 tests
 testClickAndMultipleCaseDisappear
 
-| board |
+| board game|
 
 "Y: Yellow , B: Blue , G: Green , R: Red
 	represents this grid:
@@ -10,7 +10,8 @@ testClickAndMultipleCaseDisappear
 	 | B | G | G | 
 
 	"
-board := Board new.
+	game := Game new.
+board := Board new game:game.
 board configureGrid: ((CTNewArray2D width: 3 height: 3)
 		at: 1 @ 1 put: (BlueCase new);
 		at: 2 @ 1 put: (YellowCase new);

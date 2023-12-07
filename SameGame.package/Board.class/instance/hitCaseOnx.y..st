@@ -1,6 +1,6 @@
 as yet unclassified
 hitCaseOnx: x y: y
-| cpt |
+| cpt sndCpt|
 	hitList add: (self grid at:(x@y)).
 	(grid at:x@y) hit.
 	hitList size > 1 ifTrue: [self nullCaseOnx: x y:y].
@@ -14,4 +14,8 @@ hitCaseOnx: x y: y
 	[ cpt <= self  grid width ] whileTrue: [
 			self reorganizeOnx: cpt  y: 1 .
 			cpt:= cpt +1.].
+		
+	self reorganizeForEmptyColonne .
+	
+	
 	
