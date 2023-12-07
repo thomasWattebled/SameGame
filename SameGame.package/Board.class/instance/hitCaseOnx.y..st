@@ -5,7 +5,6 @@ hitCaseOnx: x y: y
 	(grid at:x@y) hit.
 	hitList size > 1 ifTrue: [self nullCaseOnx: x y:y].
 	
-	self halt.
 	hitList removeAll.
 	
 	cpt := 1.
