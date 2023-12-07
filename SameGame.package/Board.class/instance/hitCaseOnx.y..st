@@ -1,8 +1,9 @@
 as yet unclassified
 hitCaseOnx: x y: y
 | cpt |
+
 	(grid at:x@y) hit.
-	hitList notEmpty ifTrue: [self nullCaseOnx: x y:x].
+	hitList notEmpty ifTrue: [self nullCaseOnx: x y:y].
 	
 	hitList removeAll.
 	
