@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"hitList"
+		"hitList",
+		"stackHit"
 	],
 	"name" : "Board",
 	"type" : "normal"

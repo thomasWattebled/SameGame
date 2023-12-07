@@ -1,10 +1,11 @@
 as yet unclassified
 hitCaseOnx: x y: y
 | cpt |
-
+	hitList add: (self grid at:(x@y)).
 	(grid at:x@y) hit.
-	hitList notEmpty ifTrue: [self nullCaseOnx: x y:y].
+	hitList size > 1 ifTrue: [self nullCaseOnx: x y:y].
 	
+	self halt.
 	hitList removeAll.
 	
 	cpt := 1.
