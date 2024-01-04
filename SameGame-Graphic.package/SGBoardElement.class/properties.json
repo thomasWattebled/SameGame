@@ -8,6 +8,6 @@
 	"instvars" : [
 		"board"
 	],
-	"name" : "SBoardElement",
+	"name" : "SGBoardElement",
 	"type" : "normal"
 }

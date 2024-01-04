@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"maps"
+		"graphic"
 	],
 	"name" : "SameGame",
 	"type" : "normal"
