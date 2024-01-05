@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"case",
-		"position"
+		"position",
+		"board"
 	],
 	"name" : "SGCaseElement",
 	"type" : "normal"

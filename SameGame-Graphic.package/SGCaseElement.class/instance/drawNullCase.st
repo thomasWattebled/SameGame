@@ -1,3 +1,3 @@
 initialization
-drawNullCasex:x y:y
+drawNullCase
 		self background: Color lightGray .

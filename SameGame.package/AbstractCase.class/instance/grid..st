@@ -1,3 +1,3 @@
 accessing
-board: aBoard
+grid: aBoard
 	board := aBoard

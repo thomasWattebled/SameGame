@@ -1,3 +1,3 @@
 initialization
-drawYellowCasex:x y:y
+drawYellowCase
 		self background: Color lightYellow .

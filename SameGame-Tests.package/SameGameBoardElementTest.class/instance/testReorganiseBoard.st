@@ -12,11 +12,11 @@ testReorganiseBoard
 game := Game new.
 firstBoard := Board new game:game.
 firstBoard := 	firstBoard configureGrid: ((CTNewArray2D width: 1 height: 5)
-		at: 1 @ 1 put: (BlueCase new board:firstBoard);
-		at: 1 @ 2 put: (NullCase  new board:firstBoard);
-		at: 1 @ 3 put: (YellowCase new board:firstBoard);
-		at: 1 @ 4 put: (NullCase new board:firstBoard);
-		at: 1 @ 5 put: (GreenCase new board:firstBoard);
+		at: 1 @ 1 put: (BlueCase new grid:firstBoard);
+		at: 1 @ 2 put: (NullCase  new grid:firstBoard);
+		at: 1 @ 3 put: (YellowCase new grid:firstBoard);
+		at: 1 @ 4 put: (NullCase new grid:firstBoard);
+		at: 1 @ 5 put: (GreenCase new grid:firstBoard);
 		yourself ).
 						
 firstBoard reorganizeOnx: 1 y: 1.

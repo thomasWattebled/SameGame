@@ -1,3 +1,3 @@
 accessing
-board
+grid
 	^ board

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "MygBoard",
+	"super" : "AnObsoleteMygBoard",
 	"category" : "SameGame",
 	"classinstvars" : [ ],
 	"pools" : [ ],
