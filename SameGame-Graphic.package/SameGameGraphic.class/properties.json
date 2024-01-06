@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "BlElement",
+	"super" : "Object",
 	"category" : "SameGame-Graphic",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"gridPosition",
-		"board"
-	],
-	"name" : "SGCaseElement",
+	"instvars" : [ ],
+	"name" : "SameGameGraphic",
 	"type" : "normal"
 }

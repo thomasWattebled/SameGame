@@ -1,4 +1,3 @@
 accessing
 isYellowCase
-
 	^ false

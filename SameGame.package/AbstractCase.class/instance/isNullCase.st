@@ -1,4 +1,3 @@
 accessing
 isNullCase 
-
-^ false
+	^ false
