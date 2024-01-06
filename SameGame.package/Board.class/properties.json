@@ -8,7 +8,8 @@
 	"instvars" : [
 		"game",
 		"hitList",
-		"stackHit"
+		"stackHit",
+		"drawer"
 	],
 	"name" : "Board",
 	"type" : "normal"

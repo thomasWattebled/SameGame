@@ -1,41 +1,36 @@
 tests
 testClickAndOneColumnDisappear
 
-| board resGrid |
+| board game |
 
 	"Y: Yellow , B: Blue , G: Green , R: Red
 	represents this grid:
-	 | B | Y | Y | R | N |
-	 | G | G | G | R | N |
-	 | G | N | B | B | N |
-	 | N | N | N | B | N |
+	 | R | Y | r | 
+	 | B | y | b | 
+	 | G | y | g | 
 	"
 	
-resGrid := ((CTNewArray2D width: 5 height: 4)
-		at: 1 @ 1 put: (BlueCase new);
-		at: 2 @ 1 put: (YellowCase new);
-		at: 3 @ 1 put: (YellowCase new);
-		at: 4 @ 1 put: (RedCase new);		
-		at: 5 @ 1 put: (NullCase new);
-		at: 1 @ 2 put: (GreenCase new);
-		at: 2 @ 2 put: (GreenCase new);
-		at: 3 @ 2 put: (GreenCase new);
-		at: 4 @ 2 put: (RedCase new);
-		at: 5 @ 2 put: (NullCase new);
-		at: 1 @ 3 put: (GreenCase new);
-		at: 2 @ 3 put: (NullCase new);
-		at: 3 @ 3 put: (BlueCase new);
-		at: 4 @ 3 put: (BlueCase new);
-		at: 5 @ 3 put: (NullCase new);
-		at: 1 @ 4 put: (NullCase new);
-		at: 2 @ 4 put: (NullCase new);
-		at: 3 @ 4 put: (NullCase new);
-		at: 4 @ 4 put: (BlueCase new);
-		at: 5 @ 4 put: (NullCase new);
+game := Game new.
+board := Board new game:game.
+board configureGrid: ((CTNewArray2D width: 3 height: 3)
+		at: 1 @ 1 put: (RedCase  new grid:board);
+		at: 2 @ 1 put: (YellowCase new grid:board);
+		at: 3 @ 1 put: (RedCase   new grid:board);
+		at: 1 @ 2 put: (BlueCase new grid:board);
+		at: 2 @ 2 put: (YellowCase  new grid:board);
+		at: 3 @ 2 put: (BlueCase new grid:board);
+		at: 1 @ 3 put: (GreenCase  new grid:board);
+		at: 2 @ 3 put: (YellowCase new grid:board);
+		at: 3 @ 3 put: (GreenCase  new grid:board);
 		yourself ).
 
-board := SGBoardElement new grid: GameTest new boardForTest.
-board grid hitOnx: 3 y: 1.
-"fonctionne jusque ici"
+board hitCaseOnx: 2 y: 2.
 
-self assert: resGrid asArray equals: board grid grid asArray.
+self assert: (board grid at:3@1) litteral  equals: 'N'.
+self assert: (board grid at:3@2) litteral  equals: 'N'.
+self assert: (board grid at:3@3) litteral  equals: 'N'.
+
+self assert: (board grid at:2@1) litteral  equals: 'R'.
+self assert: (board grid at:2@2) litteral  equals: 'B'.
+self assert: (board grid at:2@3) litteral  equals: 'G'.
+
