@@ -24,7 +24,7 @@ Il faut ensuite à partir de git repository browser remplir le Owner Name et le 
 
 ![Alt text](image.png).
 
-Pour jouer ensuite, il suffit de taper ```SameGame open ``` dans un playGround.
+Pour jouer ensuite, il suffit de taper ```SameGameGraphic open ``` dans un playGround.
 
 Pour trouver le code du jeu il suffit d'aller dans le package SameGame.
 On peut retrouver les tests dans le package SameGame-Tests.
