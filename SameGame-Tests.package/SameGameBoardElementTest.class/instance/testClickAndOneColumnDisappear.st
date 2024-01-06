@@ -1,7 +1,7 @@
 tests
 testClickAndOneColumnDisappear
 
-| board game |
+| board game graphicBoard|
 
 	"Y: Yellow , B: Blue , G: Green , R: Red
 	represents this grid:
@@ -11,20 +11,26 @@ testClickAndOneColumnDisappear
 	"
 	
 game := Game new.
-board := Board new game:game.
-board configureGrid: ((CTNewArray2D width: 3 height: 3)
-		at: 1 @ 1 put: (RedCase  new grid:board);
-		at: 2 @ 1 put: (YellowCase new grid:board);
-		at: 3 @ 1 put: (RedCase   new grid:board);
-		at: 1 @ 2 put: (BlueCase new grid:board);
-		at: 2 @ 2 put: (YellowCase  new grid:board);
-		at: 3 @ 2 put: (BlueCase new grid:board);
-		at: 1 @ 3 put: (GreenCase  new grid:board);
-		at: 2 @ 3 put: (YellowCase new grid:board);
-		at: 3 @ 3 put: (GreenCase  new grid:board);
+	board := Board new game:game.
+	board configureGrid: ((CTNewArray2D width: 3 height: 3)
+		at: 1 @ 1 put: (RedCase  new grid:board ; position:1@1);
+		at: 2 @ 1 put: (YellowCase  new grid:board ; position:2@1);
+		at: 3 @ 1 put: (RedCase  new  grid:board ; position:3@1);
+		at: 1 @ 2 put: (BlueCase  new  grid:board ; position:1@2);
+		at: 2 @ 2 put: (YellowCase new  grid:board ; position:2@2);
+		at: 3 @ 2 put: (BlueCase new  grid:board ; position:3@2);
+		at: 1 @ 3 put: (GreenCase   new  grid:board ; position:1@3);
+		at: 2 @ 3 put: (YellowCase  new  grid:board ; position:2@3);
+		at: 3 @ 3 put: (GreenCase  new  grid:board ; position:3@3);
 		yourself ).
-
-board hitCaseOnx: 2 y: 2.
+	
+	graphicBoard := SGBoardElement new.
+	graphicBoard grid: board grid.
+	graphicBoard sameGameBoard: board.
+	
+	board drawer: graphicBoard.
+	
+	board hitCaseOnx: 2 y: 2.
 
 self assert: (board grid at:3@1) litteral  equals: 'N'.
 self assert: (board grid at:3@2) litteral  equals: 'N'.

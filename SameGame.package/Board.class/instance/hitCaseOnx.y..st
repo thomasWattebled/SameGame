@@ -17,5 +17,11 @@ hitCaseOnx: x y: y
 		
 	self reorganizeForEmptyColonne .
 	
+	1 to: (self grid width) do: [:col |
+		1 to: (self grid height) do: [:row |
+			(self grid at:col@row) draw:drawer ]
+		].
+	self drawer refresh. 
+	
 	
 	
