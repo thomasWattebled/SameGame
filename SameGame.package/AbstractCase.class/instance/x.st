@@ -1,0 +1,4 @@
+accessing
+x
+
+	^ position x
