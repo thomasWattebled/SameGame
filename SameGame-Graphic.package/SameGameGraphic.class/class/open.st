@@ -4,7 +4,7 @@ open
 	
 	game := Game new.
 	board := Board new game:game.
-	board configureGrid: ((CTNewArray2D width: 3 height: 3)
+	"board configureGrid: ((CTNewArray2D width: 3 height: 3)
 		at: 1 @ 1 put: (BlueCase  new grid:board ; position:1@1);
 		at: 2 @ 1 put: (YellowCase  new grid:board ; position:2@1);
 		at: 3 @ 1 put: (YellowCase  new  grid:board ; position:3@1);
@@ -14,8 +14,8 @@ open
 		at: 1 @ 3 put: (BlueCase   new  grid:board ; position:1@3);
 		at: 2 @ 3 put: (GreenCase  new  grid:board ; position:2@3);
 		at: 3 @ 3 put: (GreenCase  new  grid:board ; position:3@3);
-		yourself ).
-	
+		yourself )."
+	board regenerateGridX: 5 y: 5 .
 	graphicBoard := SGBoardElement new.
 	graphicBoard grid: board grid.
 	graphicBoard sameGameBoard: board.

@@ -22,7 +22,7 @@ testClickAndMultipleCaseDisappear
 		at: 1 @ 3 put: (BlueCase   new  grid:board ; position:1@3);
 		at: 2 @ 3 put: (GreenCase  new  grid:board ; position:2@3);
 		at: 3 @ 3 put: (GreenCase  new  grid:board ; position:3@3);
-		yourself ).
+		yourself).
 	graphicBoard := SGBoardElement new.
 	graphicBoard grid: board grid.
 	graphicBoard sameGameBoard: board.
