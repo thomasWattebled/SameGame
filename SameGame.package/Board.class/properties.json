@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "AnObsoleteMygBoard",
+	"super" : "MygBoard",
 	"category" : "SameGame",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,7 +8,8 @@
 	"instvars" : [
 		"game",
 		"hitList",
-		"stackHit"
+		"stackHit",
+		"drawer"
 	],
 	"name" : "Board",
 	"type" : "normal"

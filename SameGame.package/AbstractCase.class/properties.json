@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "MaximeDSM 11/24/2023 11:21",
-	"super" : "AnObsoleteMygAbstractBox",
+	"super" : "MygAbstractBox",
 	"category" : "SameGame",
 	"classinstvars" : [ ],
 	"pools" : [ ],
