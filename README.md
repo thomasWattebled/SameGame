@@ -22,7 +22,7 @@ Metacello new
     load.
 ```
 
-Il faut ensuite à partir de git repository browser remplir le Owner Name "thomasWattebled" et le Project name "SameGame" avec protocole HTTPS.
+Il faut ensuite à partir de git repository browser remplir le Owner Name "thomasWattebled" et le Project name "SameGame".
 
 ![Alt text](image.png).
 
@@ -49,6 +49,8 @@ Côté coeur du jeu, nous avons une classe Board (représentant le board du jeu)
 
 Côté partie graphique, nous avons les classes SGBoardElement (représentant le board graphique) et SGCaseElement (représentant la case graphique) qui héritent de BlElement. La classe principale SameGameGraphic sera utilisée notamment pour sa méthode de classe "open" qui gère la création d'une partie (en associant coeur du jeu et partie graphique).
 
+C'est l'organisation qui nous paraissait la plus naturelle, car on retrouve pour chaque classe un élément principal du jeu (à savoir une partie, un board et des cases). La partie graphique suit la même organisation pour faciliter l'association coeur du jeu/partie graphique.
+
 ## Les design patterns
 
 Pour les cases du côté du coeur du jeu, on retrouve le design Pattern NullPattern qui permet de faire la différence entre les cases cliquables et les non cliquables.
@@ -62,3 +64,9 @@ Ceci passe donc par la création de tests dans un premier temps, et de l'écritu
 
 Lorsque le coeur du jeu a été terminé, nous nous sommes penchés sur le fonctionnement de bloc et de son implémentation dans les différents jeux existants dans Myg pour créer la partie graphique.
 Ici il était plus compliqué de faire du TDD, c'est pourquoi les tests ont été rédigés après.
+
+## Les tests
+
+Nous avons testés les fonctionnements absolument nécessaires au fonctionnement du jeu, notamment l'association graphique/coeur du jeu, la réorganisation du board, le clique sur une case...
+
+Le coeur du jeu est ainsi plus testé car la partie graphique ne s'occupe que de "l'affichage" et donc pas du fonctionnement de celui-ci.
